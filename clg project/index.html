@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Horizon | Luxury Stay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <div class="logo">GRAND <span>HORIZON</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Experience Pure Luxury</h1>
+            <p>Your perfect getaway in the heart of the city.</p>
+            <a href="#booking" class="btn-primary">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Room Categories -->
+    <section id="rooms" class="rooms">
+        <h2 class="section-title">Our Rooms</h2>
+        <div class="room-grid">
+            <div class="room-card">
+                <h3>Deluxe Room</h3>
+                <p>$150 / Night</p>
+            </div>
+            <div class="room-card">
+                <h3>Executive Suite</h3>
+                <p>$250 / Night</p>
+            </div>
+            <div class="room-card">
+                <h3>Presidential Suite</h3>
+                <p>$500 / Night</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking" class="booking-section">
+        <div class="form-container">
+            <h2>Reserve Your Stay</h2>
+            <form id="hotelForm">
+                <div class="input-group">
+                    <label>Check-In</label>
+                    <input type="date" required>
+                </div>
+                <div class="input-group">
+                    <label>Check-Out</label>
+                    <input type="date" required>
+                </div>
+                <div class="input-group">
+                    <label>Guests</label>
+                    <select>
+                        <option>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>3+ Guests</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit">Confirm Availability</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Project Resource Section
+    <section id="resources" class="resources">
+        <h2>Project Submission Files</h2>
+        <div class="download-grid">
+            <a href="synopsis.pdf" class="dl-card" download>
+                <i class="fas fa-file-pdf"></i>
+                <span>Download Synopsis</span>
+            </a>
+            <a href="project_report.pdf" class="dl-card" download>
+                <i class="fas fa-file-pdf"></i>
+                <span>Project Report</span>
+            </a>
+            <a href="presentation.pdf" class="dl-card" download>
+                <i class="fas fa-file-powerpoint"></i>
+                <span>PPT Presentation</span>
+            </a>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 College Project | Designed by arbaz</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Toast Notification Container -->
+<div id="toast" class="toast">
+    <div class="toast-content">
+        <i class="fas fa-check-circle"></i>
+        <div class="message">
+            <span class="text text-1">Success</span>
+            <span class="text text-2">Checking room availability...</span>
+        </div>
+    </div>
+    <i class="fas fa-times close"></i>
+    <div class="progress"></div>
+</div>
+
+</body>
+</html>
